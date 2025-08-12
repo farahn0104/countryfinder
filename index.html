@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Info Finder</title>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Country Info Finder</h1>
+      <form id="searchForm" return="false">
+        <input
+          type="text"
+          required
+          id="countryInput"
+          placeholder="Enter country name (e.g., Lanka, France, Japan...)"
+        />
+        <button id="btn" type="submit">Search</button>
+      </form>
+
+      <div id="resultContainer" class="result-container" style="display: none">
+        <div id="countryInfo">India</div>
+        <div id="errorMessage" class="error">There is Some Type of Error</div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
